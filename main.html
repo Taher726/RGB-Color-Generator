@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Font Family-->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Main Container-->
+    <div class="container">
+        <!--Color Container-->
+        <div class="color" id="color"></div>
+        <!--Wrapper-->
+        <div class="wrapper">
+            R<input type="range" min="0" max="255" value="0" id="red" oninput="colorChange()">
+        </div>
+        <!--Wrapper-->
+        <div class="wrapper">
+            G<input type="range" min="0" max="255" value="0" id="green"oninput="colorChange()">
+        </div>
+        <!--Wrapper-->
+        <div class="wrapper">
+            B<input type="range" min="0" max="255" value="0" id="blue" oninput="colorChange()">
+        </div>
+        <div class="copied" id="copied"></div>
+        <!--RGB Color output-->
+        <span id="output">rgb(0,0,0)</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
